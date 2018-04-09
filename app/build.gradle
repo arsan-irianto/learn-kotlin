@@ -8,11 +8,13 @@ android {
     compileSdkVersion 27
     defaultConfig {
         applicationId "com.arsan.learn_kotlin"
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "BASE_URL", "\"https://www.thesportsdb.com/\""
+        buildConfigField "String", "TSDB_API_KEY", "\"1\""
     }
     buildTypes {
         release {
